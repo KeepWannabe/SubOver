@@ -39,7 +39,7 @@ var (
 )
 
 func InitializeProviders() {
-    raw, err := ioutil.ReadFile("providers.json")
+    raw, err := ioutil.ReadFile("$HOME/.0verscan/providers.json")
     if err != nil {
         fmt.Println(err.Error())
         os.Exit(1)
